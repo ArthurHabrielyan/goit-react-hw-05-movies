@@ -1,0 +1,17 @@
+.link {
+  list-style: none;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  padding: 20px 40px;
+  border: 1px solid black;
+}
+
+.activeLink {
+  text-decoration: none;
+  padding: 20px;
+  color: orange;
+}
