@@ -4,8 +4,8 @@ import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 
 import { HeaderNav } from "./components/Header";
 import { Container } from "./Container";
-import { FilmList } from "./components/FilmList";
-// const FilmList = lazy(() => import("./components/FilmList"));
+
+const FilmList = lazy(() => import("./components/FilmList"));
 const DetailsInfopage = lazy(() =>
   import("./components/pages/DetailsInfoPage")
 );
@@ -15,7 +15,7 @@ const App = () => {
   const [movies, setMovies] = useState([]);
   const [filmsResult, setFilmResult] = useState([]);
   const location = useLocation();
-  console.log(location.pathname);
+
   useEffect(() => {
     onGetMovies();
   }, []);
