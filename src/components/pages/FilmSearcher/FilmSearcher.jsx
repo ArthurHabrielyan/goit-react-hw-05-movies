@@ -1,8 +1,8 @@
 import { useState, lazy } from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import style from "./FilmSearcher.module.css";
-// const FilmList = lazy(() => import("../../../components/FilmList"));
-import { FilmList } from "../../FilmList";
+const FilmList = lazy(() => import("../../../components/FilmList"));
+
 export const FilmSearcher = ({ onSearchByQuery, filmsResult }) => {
   const [query, setQuery] = useState("");
   const location = useLocation();
