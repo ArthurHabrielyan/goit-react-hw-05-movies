@@ -40,7 +40,7 @@ const App = () => {
 
   return (
     <div>
-      {location.pathname === "/goit-react-hw-05-movies/" && console.log("ttt")}
+      {location.pathname === "/goit-react-hw-05-movies" && <Navigate to="/" />}
       <HeaderNav />
       <Container>
         <Suspense fallback={<div>Loading...</div>}>
