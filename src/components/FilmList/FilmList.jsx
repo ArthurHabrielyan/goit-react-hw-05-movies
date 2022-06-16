@@ -1,4 +1,4 @@
-import FilmListItem from "./FilmListItem";
+import { FilmListItem } from "./FilmListItem";
 import style from "./FilmList.module.css";
 
 export const FilmList = ({ movies }) => {

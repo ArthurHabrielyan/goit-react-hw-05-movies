@@ -1,11 +1,10 @@
 import { onTrendingFilms, onQueryFilms } from "./api-service";
 import { useState, useEffect, lazy, Suspense } from "react";
-import { Route, Routes, useLocation, Navigate } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import { HeaderNav } from "./components/Header";
 import { Container } from "./Container";
-
-const FilmList = lazy(() => import("./components/FilmList"));
+import { FilmList } from "./components/FilmList";
 const DetailsInfopage = lazy(() =>
   import("./components/pages/DetailsInfoPage")
 );
