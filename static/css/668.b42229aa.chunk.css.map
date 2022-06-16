@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/668.b42229aa.chunk.css","mappings":"AAAA,sBAEI,YAAa,CACT,cAAe,CAFnB,eAGJ","sources":["components/FilmList/FilmList.module.css"],"sourcesContent":[".list{\n    list-style: none;\n    display: flex;\n        flex-wrap: wrap;\n}"],"names":[],"sourceRoot":""}
