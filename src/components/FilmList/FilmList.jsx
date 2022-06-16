@@ -1,8 +1,5 @@
-// import FilmListItem from "./FilmListItem";
+import FilmListItem from "./FilmListItem";
 import style from "./FilmList.module.css";
-import { lazy } from "react";
-
-const FilmListItem = lazy(() => import("./FilmListItem"));
 
 export const FilmList = ({ movies }) => {
   return (
