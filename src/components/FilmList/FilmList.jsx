@@ -7,7 +7,7 @@ export const FilmList = ({ movies, setFilmResult }) => {
   const location = useLocation();
 
   useEffect(() => {
-    location.pathname === "/" && setFilmResult([]);
+    location.search === "" && setFilmResult([]);
   }, []);
 
   return (
