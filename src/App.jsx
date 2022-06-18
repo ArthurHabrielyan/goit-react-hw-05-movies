@@ -13,6 +13,7 @@ const FilmSearcher = lazy(() => import("./components/pages/FilmSearcher"));
 const App = () => {
   const [movies, setMovies] = useState([]);
   const [filmsResult, setFilmResult] = useState([]);
+
   const location = useLocation();
 
   useEffect(() => {
@@ -41,11 +42,16 @@ const App = () => {
     <div>
       {location.pathname === "/goit-react-hw-05-movies/" &&
         (location.pathname = "/")}
-      <HeaderNav />
+      <HeaderNav setFilmResult={setFilmResult} />
       <Container>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
-            <Route path="/" element={<FilmList movies={movies} />} />
+            <Route
+              path="/"
+              element={
+                <FilmList movies={movies} setFilmResult={setFilmResult} />
+              }
+            />
             <Route path="/movies/:id/*" element={<DetailsInfopage />}></Route>
             <Route
               path="/movies/*"
