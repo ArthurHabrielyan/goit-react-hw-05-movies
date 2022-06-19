@@ -3,6 +3,7 @@ import style from "./FilmListItem.module.css";
 
 export const FilmListItem = ({ title, id, poster_path }) => {
   const location = useLocation();
+
   const poster = `https://image.tmdb.org/t/p/w300/${poster_path}`;
   return (
     <Link

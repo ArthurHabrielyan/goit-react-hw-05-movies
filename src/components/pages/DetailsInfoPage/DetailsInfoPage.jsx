@@ -49,10 +49,14 @@ export const DetailsInfoPage = () => {
       )}
       <ul>
         <li>
-          <Link to={`/movies/${id}/cast`}> Cast </Link>
+          <Link state={location.state} to="cast">
+            Cast
+          </Link>
         </li>
         <li>
-          <Link to={`/movies/${id}/reviews`}> Reviews </Link>
+          <Link state={location.state} to="reviews">
+            Reviews
+          </Link>
         </li>
       </ul>
 
